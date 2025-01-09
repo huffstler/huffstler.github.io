@@ -1,0 +1,13 @@
+# Hello Mr. Roboto
+
+I'm not typing anything here this is me only speaking into my microphone. I'll be entering punctuation manually but for now I'm just testing out how it feels to write a post without typing anything at all.
+
+I recently saw a comment on hacker news that linked to Maggie Appleton's "A brief history and ethos of the digital garden" and one of the proponents of this digital garden was putting out a kind of stream of thoughts. I am certainly the type of person to get bored with the time it takes for me to type something out and by the time I end up getting a fully fledged thought out I've... gotten over it so to speak. So in the interest of trying to keep my own interest I'm now typing this blog post entirely through voice. We'll do some very minimal editing and punctuation editions and leave it that and hopefully this will allow me to do more and talk about the things that I want to talk about (and "technically" write) and share those ideas with whoever the fuck reads these things.
+
+The idea of a post that is more of a stream of conscience than a highly edited and refined piece of media is more appealing to me. I don't necessarily enjoy having to go back through and change things to make the structure easier to to follow or, you know, censor myself or whatever else. I like to just put it out there and kind of be done with it so I can move on to the next thing and hopefully this will help me do that.
+
+I have no idea what else I'm going to talk about, but I think that's kind of the point that. Maggie brought up in her um. post on a history and ethos of digital garden where it can be about anything. I could talk about whatever the fuck I want to talk about. I can now do it in a much more streamlined fashion that doesn't have me losing interest three sentences in. I think I'm going to try to do one of these stream of conscious posts a week and we'll see how that feels.
+
+I guess the only problem with this is going to be, if I want to include a link, I still need to type that link in. But as long as I have that stuff pulled up, and ready to go that shouldn't be too much of an issue. And the shared links between Firefox, on my phone and Firefox on my tower are easy to retrieve.
+
+Also, any talking about code problems that I'm currently having or whatever I'm working on will kind of also be a bitch. I'm going to need code snippets and I'm going to need formatting and so I guess I'll do markdown formatting for the base layer and then just transform it to HTML using pandoc. We'll see how this goes.
