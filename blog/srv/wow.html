@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>jarsarezips</title>
+  <title>wow</title>
   <style>
     html {
       color: #1a1a1a;
@@ -235,62 +235,27 @@
 </head>
 <body>
 	<a href="https://huffstler.github.io/blog">Back</a>
-<h1 id="jar-files-are-just-zips-and-how-vim-relates-to-that-thought">JAR
-files are just ZIPs… and how VIM relates to that thought</h1>
-<p>I honestly have no recollection of how I learned this first fact. I’m
-sure it was while I was at my very first job out of college at a
-regional bank. Java 7 was what we used, and Java 8 was the shiny new
-thing. Every web-app ran on tomcat (no containers!!) with JSP’s as the
-UI.</p>
-<p>I remember my manager at the time helping me work through some issue
-I was having, probably related to the fat-jar not finding the classes I
-needed on the classpath. (Due to me borking the maven build
-definition)</p>
+<h1 id="wow">WOW</h1>
 <blockquote>
-<p>Me: How do I know where it’s looking to find the dependencies? Him:
-Just open it up and look at the manifest. Me: What? Him: Yea, jar files
-are basically just a zip file. You can change the extension and open it
-in your file explorer. Rename it back to
-<code>&lt;filename&gt;.jar</code> and you’re good to go. Me: Oh. Wow,
-that’s cool.</p>
+<p>Things that made me go ^^</p>
 </blockquote>
-<p>That’s been a nice little tidbit to have in the back of my head, been
-rather helpful from time to time.</p>
-<p>Oh, also Vim can open and navigate through ZIP files with the default
-<code>zip.vim</code> plugin</p>
-<p>I stumbled across <a
-href="https://www.reddit.com/r/vim/comments/tx2and/today_i_learned_that_you_can_use_vim_to_interact/">this
-reddit post</a> some time ago. This was a really nice find, as it
-removed a couple steps that I usually took in order to look at or alter
-data in zip files.</p>
-<h3 id="before">before</h3>
+<hr />
+<h2 id="super-long-pipe-command">Super long pipe command</h2>
+<hr />
 <div class="sourceCode" id="cb1"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> getzip.com/foo.zip foo1.zip</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">unzip</span> foo1.zip foo</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">vim</span> foo/bar.txt</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">zip</span> foo/ foo.zip</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-r</span> foo foo1.zip</span></code></pre></div>
-<h3 id="after">after</h3>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> getzip.com/foo.zip</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">vim</span> foo.zip/bar.txt</span></code></pre></div>
-<p>Can you see where this post headed?</p>
-<p>Today at work, I had to do a bit of investigation. We have a cron job
-running that’s not behaving and we don’t know why. The logging isn’t
-helpful, it’s a large java project with haphazardly unstructured
-classes, and the jar file name isn’t called anything that turned up in a
-search through the source. So, how can little ol’ me find out what class
-is actually being used when the jar is executed? VIM BABY.</p>
-<div class="sourceCode" id="cb3"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">vim</span> foo.jar/META-INF/MANIFEST.mf</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># file contents below</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="ex">Manifest-Version:</span> x.y</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="ex">Main-Class:</span> org.foo.bar.NameNotRelatedToJarName.java <span class="op">&lt;</span>-- <span class="er">(</span><span class="ex">This</span> is the important part<span class="kw">)</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="ex">Class-Path:</span> <span class="op">&lt;</span>other things<span class="op">&gt;</span></span></code></pre></div>
-<blockquote>
-<p>Oh look, there’s the main class name. I wonder if I can search tha-
-yup there’s what I needed!</p>
-</blockquote>
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">crontab</span> <span class="at">-l</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-v</span> <span class="st">&#39;^#&#39;</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-k2g</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-Eo</span> <span class="st">&#39;/home/&lt;user&gt;/.*\.sh&#39;</span> <span class="kw">|</span> <span class="fu">awk</span> <span class="st">&#39;{print $1}&#39;</span> <span class="kw">|</span> <span class="fu">tr</span> <span class="at">-d</span> <span class="st">&#39;&quot;&#39;</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="kw">|</span> <span class="fu">xargs</span> tail <span class="at">-n</span> +1 <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-Eo</span> <span class="st">&#39;\s([A-Za-z]\.*){2,}\s[$]&#39;</span> <span class="kw">|</span> <span class="fu">tr</span> <span class="at">-d</span> <span class="st">&#39;$&#39;</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-t</span> <span class="st">&#39;.&#39;</span> <span class="at">-k1g</span> <span class="kw">|</span> <span class="fu">uniq</span></span></code></pre></div>
+<p>It’s non-optimal, I’m sure. But it works enough for what I’m looking
+for! Bonus points if you can figure out what it does.</p>
+<h3 id="standouts-from-above">Standouts from above</h3>
+<ul>
+<li><code>tail -n +1</code> to print out the file <em>with the filename
+as a header</em> . Was looking for that exact feature in some hideous
+incantation of <code>xargs</code> + <code>echo</code> or something.</li>
+<li>Specifying the delimiter in <code>sort</code> with
+<code>-t</code></li>
+</ul>
+<hr />
+<h2 id="next-comes-later">Next comes later</h2>
+<hr />
 </body>
 </html>
