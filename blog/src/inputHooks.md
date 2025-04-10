@@ -1,6 +1,6 @@
 # Typescript + React Hooks
 
-I've started learning React for my job. It's different, and early enough where i'm not sure if I like it yet or not. The world of web tech is certainly different from what I'm used to (Java). One of the first things that wasn't immediately 'accessible' to me was interacting with `<form>`'s.
+I've started learning React for my job. It's different, and early enough where I'm not sure if I like it yet or not. The world of web tech is certainly different from what I'm used to (Java). One of the first things that wasn't immediately 'accessible' to me was interacting with `<form>`'s.
 
 What I'm building currently is simple. Like, _easy_ simple. And yet, here I am writing a 'whole' blog post about it.
 
@@ -77,4 +77,3 @@ export const UploadPageContent: FunctionComponent = () => {
 Once I get some sleep I'll revisit what I have here and go more in depth with what's going on.
 
 Time to `pandoc ./src/inputHooks.md -s -o ../srv/inputHooks.html`!
-

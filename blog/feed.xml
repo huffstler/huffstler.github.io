@@ -1,67 +1,59 @@
+
 <?xml version='1.0' encoding='UTF-8' ?>
 <rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
 <!-- Made using rss-roller https://github.com/maxhebditch/rss-roller -->
-
-
 <channel>
 <title>P-Blahg</title>
 <link>https://huffstler.github.io/blog/srv</link>
 <description>Personal Blog</description>
 <atom:link href='https://huffstler.github.io/blog/feed.xml' rel='self' type='application/rss+xml' />
 
-<item>
+
+		<item>
         <title>WOW</title>
         <link>https://huffstler.github.io/blog/srv/wow.html</link>
-        <guid></guid>
         <description> Things that made me go ^^ </description>
         </item>
         
-<item>
+
+		<item>
         <title>Hello Mr. Roboto</title>
         <link>https://huffstler.github.io/blog/srv/speak-dont-write.html</link>
-        <guid></guid>
         <description> I’m not typing anything here this is me only speaking into my</description>
         </item>
         
-<item>
+
+		<item>
         <title></title>
         <link>https://huffstler.github.io/blog/srv/spaghetti.html</link>
-        <guid></guid>
         <description>  Last Edited: 2025-04-05  </description>
         </item>
         
-<item>
-        <title></title>
-        <link>https://huffstler.github.io/blog/srv/pandocresearch.html</link>
-        <guid></guid>
-        <description></description>
-        </item>
-        
-<item>
+
+		<item>
         <title></title>
         <link>https://huffstler.github.io/blog/srv/jarsarezips.html</link>
-        <guid></guid>
         <description> I honestly have no recollection of how I learned this first fact. I’m</description>
         </item>
         
-<item>
+
+		<item>
         <title>Typescript + React Hooks</title>
         <link>https://huffstler.github.io/blog/srv/inputHooks.html</link>
-        <guid></guid>
         <description> I’ve started learning React for my job. It’s different, and early</description>
         </item>
         
-<item>
+
+		<item>
         <title></title>
         <link>https://huffstler.github.io/blog/srv/idontdocynicismwell.html</link>
-        <guid></guid>
         <description> I do not hate, blame, or dislike even, any author mentioned in this</description>
         </item>
         
-<item>
+
+		<item>
         <title></title>
         <link>https://huffstler.github.io/blog/srv/firstpost.html</link>
-        <guid></guid>
         <description> Not much ado to be had, this wasn’t planned out in any way. I’ve been</description>
         </item>
         

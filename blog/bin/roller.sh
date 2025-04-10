@@ -1,11 +1,10 @@
 #!/bin/bash
 
 header() {
-	echo """<?xml version='1.0' encoding='UTF-8' ?>
+	echo """
+<?xml version='1.0' encoding='UTF-8' ?>
 <rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
 <!-- Made using rss-roller https://github.com/maxhebditch/rss-roller -->
-""" >~/feedtop
-	echo """
 <channel>
 <title>$title</title>
 <link>$link</link>
@@ -26,15 +25,16 @@ footer() {
 
 item() {
 	if [[ $mode == "a" ]]; then
-		echo """<item>
+		echo """
+		<item>
         <title>$fullTitle</title>
         <link>$linkadd</link>
-        <guid>$guid</guid>
         <description>$extract</description>
         </item>
         """ >>~/feed
 	elif [[ $mode == "m" ]]; then
-		echo """<item>
+		echo """
+		<item>
         <title>$fullTitle</title>
         <link>$linkadd</link>
         <guid isPermaLink='false'>$guidadd</guid>
@@ -48,7 +48,7 @@ combine() {
 	header
 	footer
 	cat ~/feedtop ~/feed >~/feedtb
-	cat ~/feedtb ~/feedbottom >$feedname
+	cat ~/feedtb ~/feedbottom >"$feedname"
 	rm ~/feedtop ~/feed ~/feedtb ~/feedbottom
 }
 
@@ -76,30 +76,30 @@ fi
 source ~/.rss-roller.rc
 
 if [[ ! -f $feedname ]]; then
-	touch $feedname
+	touch "$feedname"
 fi
 
 if [[ $1 == "--auto" ]]; then
 	mode=a
 	#Do the bad thing
 	if [[ -f $feedname ]]; then
-		rm $feedname
+		rm "$feedname"
 	fi
-	touch $feedname
+	touch "$feedname"
 	postArray=($(ls -r "$postDir"/*.html))
-	numPosts=$(ls "$postDir"/*.html | wc -l)
+	numPosts=$(find "$postDir"/*.html -type f | wc -l)
 	echo "numposts is $numPosts"
 	postNum=0
 	guidadd=$linkadd
 	for posts in "${postArray[@]}"; do
-		let postNum+=1
+		((postNum += 1))
 		post=$posts
 		echo "adding post $postNum/$numPosts"
-		fullTitle=$(grep -o '>.*</h1>' $post | sed 's/\(>\|<\/h1>\)//g')
+		fullTitle=$(grep -o '>.*</h1>' "$post" | sed 's/\(>\|<\/h1>\)//g')
 		postname=${post##*/}
 		linkadd="$link"/"$postname"
-		extract=$(sed -n '/<p>.*/,/*.<\/p>/{p;q;}' $post | sed -e 's/<[^>]\+>/ /g' -e 's|<p>||g' -e 's|</p>||g' -e 's|"||g')
-		item $post
+		extract=$(sed -n '/<p>.*/,/*.<\/p>/{p;q;}' "$post" | sed -e 's/<[^>]\+>/ /g' -e 's|<p>||g' -e 's|</p>||g' -e 's|"||g')
+		item "$post"
 	done
 	combine
 	exit
