@@ -19,7 +19,13 @@ void main(String[] args) throws Exception {
 	Document doc = dBuilder.parse(feed);
 	doc.getDocumentElement().normalize();
 
-	System.out.println(doc.toString());
+	if (!feed.exists()) {
+		if (feed.createNewFile()) {
+			System.out.println("New feed file created at %s".formatted(feedLocation));
+		} else {
+			System.out.println("Unable to create a feed file at %s".formatted(feedLocation));
+		}
+	}
 
 	Flags f = null;
 	for (String arg : args) {

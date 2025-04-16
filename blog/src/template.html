@@ -16,8 +16,22 @@ $endif$
 $if(description-meta)$
   <meta name="description" content="$description-meta$" />
 $endif$
-  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css" type="text/css">
+<link rel="stylesheet" type="text/css">
+<!--  
+  https://stackoverflow.com/questions/69113672/loading-css-based-on-prefers-color-scheme-media-query
+  for the answer there that allowed me to respect user-defined color mode without js
+-->
+<link
+  href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura-earthly.css"
+  media="screen and (prefers-color-scheme: light)"
+  rel="stylesheet"
+/>
+<link
+	href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura-dark.css"
+	media="screen and (prefers-color-scheme: dark)"
+	rel="stylesheet"
+/>
+<title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
 $for(header-includes)$
   $header-includes$
 $endfor$
@@ -66,4 +80,7 @@ $for(include-after)$
 $include-after$
 $endfor$
 </body>
+  <footer>
+	<a href="https://huffstler.github.io/blog">Back</a>
+  </footer>
 </html>
