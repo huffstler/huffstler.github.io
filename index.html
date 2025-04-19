@@ -5,7 +5,21 @@
   <meta name="author" content="huffstler">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="My personal homepage. Links to blog and custom startpage.">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css" type="text/css">
+  <!--  
+	https://stackoverflow.com/questions/69113672/loading-css-based-on-prefers-color-scheme-media-query
+	for the answer there that allowed me to respect user-defined color mode without js
+  -->
+  <link
+	href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura-earthly.css"
+	media="screen and (prefers-color-scheme: light)"
+	rel="stylesheet"
+  />
+  <link
+	  href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura-dark.css"
+	  media="screen and (prefers-color-scheme: dark)"
+	  rel="stylesheet"
+  />
+
   <title>Landing Page</title>
 </head>
 <body>

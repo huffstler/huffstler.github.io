@@ -1,4 +1,4 @@
-# WOW
+# NICE
 
 > Things that made me go ^^
 
@@ -21,6 +21,9 @@ It's non-optimal, I'm sure. But it works enough for what I'm looking for! Bonus 
 
 ----
 
-## Next comes later
+## Alter _Touchpad_ scrolling sensitivity for Firefox on Gnome
 
-----
+> From: [YoyoEyes](https://www.reddit.com/r/Fedora/comments/1jyi53w/comment/mn1755c)
+> You have to got to about:config. From there, search for mousewheel.default.delta_multiplier_y and adjust to your preference. I have it set to 25.
+
+I found 30 to be better for me.

@@ -17,7 +17,7 @@ void main(String[] args) throws Exception {
 	DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 	DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 	Document doc = dBuilder.parse(feed);
-	doc.getDocumentElement().normalize();
+	// doc.getDocumentElement().normalize();
 
 	if (!feed.exists()) {
 		if (feed.createNewFile()) {
@@ -25,7 +25,12 @@ void main(String[] args) throws Exception {
 		} else {
 			System.out.println("Unable to create a feed file at %s".formatted(feedLocation));
 		}
+	} else {
+		System.out.println("Feed already exists. Will edit instead");
 	}
+
+	System.out.println("Version: " + doc.getXmlVersion());
+	System.out.println(doc.getTextContent());
 
 	Flags f = null;
 	for (String arg : args) {
@@ -34,5 +39,5 @@ void main(String[] args) throws Exception {
 		}
 	}
 
-	println(Arrays.asList(args).toString());
+	System.out.println(String.format("Printing Args: %s", Arrays.asList(args).toString()));
 }

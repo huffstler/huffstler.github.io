@@ -6,7 +6,20 @@
   <meta name="author" content="huffstler">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="My blog; Full of words and opinions.">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css" type="text/css">
+  <!--  
+	https://stackoverflow.com/questions/69113672/loading-css-based-on-prefers-color-scheme-media-query
+	for the answer there that allowed me to respect user-defined color mode without js
+  -->
+  <link
+	href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura-earthly.css"
+	media="screen and (prefers-color-scheme: light)"
+	rel="stylesheet"
+  />
+  <link
+	  href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura-dark.css"
+	  media="screen and (prefers-color-scheme: dark)"
+	  rel="stylesheet"
+  />
   <link rel="alternate" type="application/rss+xml" href="./feed.xml">
   <title>My Blog; Not-so full of words and opinions.</title>
 </head>
@@ -29,9 +42,9 @@
     </ul>
 </body>
 
-<hr/> 
+<hr/>
 <footer>
-	<a href="https://huffstler.github.io/blog/feed.xml"> RSS  </a>
+	<a href="https://huffstler.github.io/blog/feed.xml"> RSS 🔊</a>
 	<br/>
 	Proponent of the <a href="https://indieweb.org/why">indie-web</a>
 </footer>
