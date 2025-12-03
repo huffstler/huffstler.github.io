@@ -1,4 +1,4 @@
-name: CI
+name: Publish Site Using Soupault
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -23,10 +23,10 @@ jobs:
 
       - name: Install soupault
         env:
-          SOUPAULT_VERSION: 5.1.0$
+          SOUPAULT_VERSION: 5.2.0
         run: |
           echo Downloading and unpacking soupault
-          wget https://github.com/PataphysicalSociety/soupault/releases/download/$SOUPAULT_VERSION/soupault-$SOUPAULT_VERSION-linux-x86_64.tar.gz
+          wget  https://github.com/PataphysicalSociety/soupault/releases/download/$SOUPAULT_VERSION/soupault-$SOUPAULT_VERSION-linux-x86_64.tar.gz
           tar xvf soupault-$SOUPAULT_VERSION-linux-x86_64.tar.gz
           sudo mv -v ./soupault-$SOUPAULT_VERSION-linux-x86_64/soupault /usr/bin/
 
