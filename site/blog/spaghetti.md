@@ -1,8 +1,6 @@
 
 # Spaghetti with red meat-sauce recipe
 
-`Last Edited: 2025-04-05`
-
 ## Ingredients
 
 > Measure with your heart, this isn't baking!
