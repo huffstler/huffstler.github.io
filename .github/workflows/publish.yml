@@ -34,6 +34,14 @@ jobs:
         run: |
           soupault
 
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      contents: read
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
       - name: Setup Pages
         uses: actions/configure-pages@v5 # Use the latest version
 
@@ -45,4 +53,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4 # Use the latest version
-    # Your deployment steps here
