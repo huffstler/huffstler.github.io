@@ -14,6 +14,13 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
+    permissions:
+      pages: write
+      contents: read
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -34,14 +41,6 @@ jobs:
         run: |
           soupault
 
-  deploy:
-    needs: build
-    permissions:
-      pages: write
-      contents: read
-      id-token: write
-    runs-on: ubuntu-latest
-    steps:
       - name: Setup Pages
         uses: actions/configure-pages@v5 # Use the latest version
 
@@ -53,3 +52,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4 # Use the latest version
+
