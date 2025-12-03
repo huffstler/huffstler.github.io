@@ -17,20 +17,20 @@ I currently have a [Glorious Modular Mechanical Keyboard](https://www.pcgamingra
 
 ## Other Links
 
-- [/blog](./blog/index.html)
+- [/blog](/blog)
 - [/music](https://listenbrainz.org/user/huffstler)
 - [/projects](/projects)
-- [/startpage](./startpage/index.html)
+- [/startpage](/startpage)
 
 ### You can find me on
 
-- [Github]("https://github.com/huffstler")
-- [Mastodon]("https://mastodon.social/@scrambo")
-- [ListenBrainz: @huffstler]("https://listenbrainz.org/user/huffstler")
+- [Github](https://github.com/huffstler)
+- [Mastodon](https://mastodon.social/@scrambo)
+- [ListenBrainz: @huffstler](https://listenbrainz.org/user/huffstler)
 
 ## Here are some recent blog posts that I've made
 
-<div id="latest-blog-entries">some stuff goes here</div>
+<div id="latest-blog-entries">🚧👷‍♂️ Work In Progress 👷‍♂️🚧</div>
 
 <div id="hcard-Patrick-Hough" class="vcard">
  <a class="url fn" href="https://huffstler.github.io">Pat</a>
