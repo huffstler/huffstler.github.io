@@ -55,7 +55,7 @@
   # If you want to generate Atom feeds, you will need to adjust the site metadata config below:
 
   # Required:
-  site_url = "https://huffstler.github.io/blog"
+  site_url = "https://huffstler.github.io"
 
   # Optional but strongly recommended:
   site_author = "Pat Hough"
