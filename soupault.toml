@@ -47,7 +47,7 @@
 [custom_options]
 
   # Number of "latest post" to display on the main page
-  blog_summary_max_entries = 10
+  blog_summary_max_entries = 5
 
   ## Atom feed settings
   atom_feeds = true
@@ -59,7 +59,7 @@
 
   # Optional but strongly recommended:
   site_author = "Pat Hough"
-  site_author_email = "contact@huffstler.mozmail.com"
+  site_author_email = "9k8hgy8jp@mozmail.com"
   site_title = "Pat Blog"
   # site_logo = "https://example.com/~jrandomhacker/favicon.png"
 
