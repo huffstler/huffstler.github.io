@@ -1,0 +1,10 @@
+<post-metadata>
+ <post-title>
+  splog
+ </post-title>
+ <post-date>
+  dte
+ </post-date>
+ <post-tags>
+ </post-tags>
+</post-metadata>
