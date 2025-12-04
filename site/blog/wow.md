@@ -1,3 +1,13 @@
+<post-metadata>
+ <post-title>
+  NICE
+ </post-title>
+ <post-date>
+ 2025-10-04
+ </post-date>
+ <post-tags>
+ </post-tags>
+</post-metadata>
 
 # NICE
 

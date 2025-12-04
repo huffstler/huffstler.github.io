@@ -1,3 +1,14 @@
+<post-metadata>
+ <post-title>
+  Spaghetti Recipe
+ </post-title>
+ <post-date>
+ 2025-02-04
+ </post-date>
+ <post-tags>
+  recipe
+ </post-tags>
+</post-metadata>
 
 # Spaghetti with red meat-sauce recipe
 

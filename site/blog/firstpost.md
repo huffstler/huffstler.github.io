@@ -1,3 +1,14 @@
+<post-metadata>
+ <post-title>
+First post!
+ </post-title>
+ <post-date>
+2020-01-01
+ </post-date>
+ <post-tags>
+ </post-tags>
+</post-metadata>
+
 # Welcome to my first blog post
 
 Not much ado to be had, this wasn't planned out in any way. I've been putting off thinking about the types of topics I want to write about and have been procrastinating pretty bad.

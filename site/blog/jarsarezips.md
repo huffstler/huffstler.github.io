@@ -1,3 +1,14 @@
+<post-metadata>
+ <post-title>
+ JARs are ZIP files
+ </post-title>
+ <post-date>
+ 2023-11-17
+ </post-date>
+ <post-tags>
+ </post-tags>
+</post-metadata>
+
 # JAR files are just ZIPs... and how VIM relates to that thought
 
 I honestly have no recollection of how I learned this first fact. I'm sure it was while I was at my very first job out of college at a regional bank. Java 7 was what we used, and Java 8 was the shiny new thing. Every web-app ran on tomcat (no containers!!) with JSP's as the UI.
@@ -46,4 +57,4 @@ vim foo.jar/META-INF/MANIFEST.mf
   Class-Path: <other things>
 ```
 
-> Oh look, there's the main class name. I wonder if I can search tha- yup there's what I needed!
+> Oh look, there's the main class name. I wonder if I can search that? Yup there's what I needed!

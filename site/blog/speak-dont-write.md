@@ -1,3 +1,13 @@
+<post-metadata>
+ <post-title>
+  Trying out dictation
+ </post-title>
+ <post-date>
+ 2025-01-22
+ </post-date>
+ <post-tags>
+ </post-tags>
+</post-metadata>
 
 # Hello Mr. Roboto
 
@@ -12,4 +22,3 @@ I have no idea what else I'm going to talk about, but I think that's kind of the
 I guess the only problem with this is going to be, if I want to include a link, I still need to type that link in. But as long as I have that stuff pulled up, and ready to go that shouldn't be too much of an issue. And the shared links between Firefox, on my phone and Firefox on my tower are easy to retrieve.
 
 Also, any talking about code problems that I'm currently having or whatever I'm working on will kind of also be a bitch. I'm going to need code snippets and I'm going to need formatting and so I guess I'll do markdown formatting for the base layer and then just transform it to HTML using pandoc. We'll see how this goes.
-

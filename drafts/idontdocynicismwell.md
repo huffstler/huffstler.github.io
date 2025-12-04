@@ -1,7 +1,18 @@
+<post-metadata>
+ <post-title>
+  I don't do cynicism well; Or, Why am I so easy to influence?
+ </post-title>
+ <post-date>
+ 2025-12-04
+ </post-date>
+ <post-tags>
+  rant
+ </post-tags>
+</post-metadata>
 
 # I don't do Cynicism well; Or, Why am I so easy to influence?
 
-## Inspiration / My "13" Reasons Why
+## Inspiration / "My 13 Reasons Why"
 
 - [Ludic](https://ludic.mataroa.blog/blog/ludics-guide-to-getting-software-engineering-jobs/)
 - [Smitelli](https://www.scottsmitelli.com/articles/ideal-candidate/)
