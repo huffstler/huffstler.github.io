@@ -37,4 +37,19 @@ It's non-optimal, I'm sure. But it works enough for what I'm looking for! Bonus 
 > From: [YoyoEyes](https://www.reddit.com/r/Fedora/comments/1jyi53w/comment/mn1755c)
 > You have to got to about:config. From there, search for mousewheel.default.delta_multiplier_y and adjust to your preference. I have it set to 25.
 
-I found 30 to be better for me.
+I've found 30 to work better for me.
+
+## Personal `post` command
+
+This is the current incarnation of a tool I've written to make it easier to get up and going with a new blog post
+
+```bash
+post(){
+ postpath="$HOME/dev/website/drafts/$1.md"
+ currDate=`date -I`
+ 
+ sed "s/splog/$1/" "$HOME/dev/website/templates/skeleton-post.md" | sed "s/dte/$currDate/" >> "$postpath"
+
+ nvim "$postpath"
+}
+```
