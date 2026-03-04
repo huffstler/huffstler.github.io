@@ -16,11 +16,11 @@
 Personally, it feels like I'm still in mourning for Pocket. I had a pretty nice setup going when it was still operational;
 
 - A Self-Hosted FreshRSS instance.
-- An [accepted feature request](https://github.com/FreshRSS/FreshRSS/discussions/6878) to fire events when I star articles.
+- An [accepted feature request](https://github.com/FreshRSS/FreshRSS/discussions/6878) to fire events when articles are starred.
 - A [custom plugin (rip)](https://github.com/huffstler/xExtension-StarToPocket) that I forked to send those starred articles directly to Pocket.
-- My [phone reader](https://github.com/ReadYouApp/ReadYou), which I do all my reading on.
+- The [RSS App](https://github.com/ReadYouApp/ReadYou), which I do all my reading on.
 
-But those middle parts are gone (kinda) now... At least the part where I star articles on my phone and they go to Pocket. I was sad and waffling about whether I wanted to self-host something else like Wallabag or what-have-you. I don't like being responsible for keeping things operational, unfortunately so I was definitely dragging my feet making a decision there. At the same time I was experiencing a different little frustration with my RSS workflow:
+But those middle parts are gone now... At least the part where I star articles on my phone and they go to Pocket. I was sad and waffling about whether I wanted to self-host something like Wallabag or whatever. I don't like being responsible for keeping things operational, unfortunately, so I was definitely dragging my feet making a decision there. At the same time I was experiencing a different little frustration with my RSS workflow:
 
 > How do I send things that don't have RSS feeds to my reader?
 
@@ -32,7 +32,7 @@ Enter a [small, overlooked submission on HackerNews](https://news.ycombinator.co
 
 Not only is it a good idea, the execution is pretty great too, if you ask me. It's a single small php file and there are no "accounts" that you need to log in to to use it. It assigns a 64 character hash when you use it for the first time. As long as you keep that hash private you have the endpoint to send whatever links you want to read later. It's pretty much exactly what I was looking for.
 
-### The last mile problem
+### The "last mile" problem
 
 There's a bookmarklet generated for you on your Librarian "homepage" which allows you to send whatever page you're on to your "account". It works great when you're using a regular computer, but I wasn't able to get it to work with my phone browser (Firefox). Blegh.
 
@@ -40,7 +40,7 @@ What's the easiest way possible to get a link from a phone to somewhere else? I 
 
 I also need the ability to send dynamically generated GET requests to a static url. Is there something I can use to combine my two requirements into one need-fulfilling tool?
 
-[Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm). Tasker can do all of that (and way more, but I have no need for the extras).
+[Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm). Tasker can do all of that (and way more, but I have no need for the extra features at this moment).
 
 Tasker has a custom "share receiver" which I use to grab the url from a webpage and send a GET request to my "account" on RSS-Librarian. Everything works flawlessly (as long as it keeps running in the background), so now I can send links to a personal read-it-later rss feed from any of my devices!
 
