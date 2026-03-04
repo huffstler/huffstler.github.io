@@ -3,6 +3,7 @@ window.onload = function () {
 		"If you're gonna be dumb, you gotta be tough",
 		"Effort spent is never effort wasted",
 		"It's your life; live it",
+		"I love it... I hate it... I would burn the whole thing down and build something exactly like it."
 	];
 
 	function getQuote() {
