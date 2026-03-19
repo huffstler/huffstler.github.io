@@ -7,11 +7,9 @@ window.wander = {
 	],
 	// Websites and pages I recommend to other wanderers.
 	pages: [
-		'https://tildes.net/',
 		'https://jolleycomics.com/TPoH/The_Hook/1',
 		'https://shellsharks.com/scrolls/',
 		'https://fromthesuperhighway.com/',
-		'https://unplatform.com/',
-		'https://www.lesspenguiny.com/articles/performative-standing-around'
+		'https://unplatform.fromthesuperhighway.com/',
 	],
 }
