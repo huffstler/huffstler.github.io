@@ -11,5 +11,6 @@ window.wander = {
 		'https://shellsharks.com/scrolls/',
 		'https://fromthesuperhighway.com/',
 		'https://unplatform.fromthesuperhighway.com/',
+		'https://selfh.st/'
 	],
 }
