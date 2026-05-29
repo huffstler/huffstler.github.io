@@ -6,7 +6,7 @@
  2025-02-04
  </post-date>
  <post-tags>
-  recipe
+ recipe
  </post-tags>
 </post-metadata>
 

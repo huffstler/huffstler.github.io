@@ -6,6 +6,7 @@
   2026-01-27
  </post-date>
  <post-tags>
+  recipe
  </post-tags>
 </post-metadata>
 
